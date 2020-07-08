@@ -7,6 +7,9 @@ extern double p_stdnorm(double z);
 
 int main(void)
 {
+    double xA, xB;
+    double mu_A=170.8, mu_B=169.7;
+    double var_A=5.43, var_B=5.5;
     double val;
     char fname[FILENAME_MAX];
     char buf[256];
@@ -27,11 +30,10 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-
-    
-
-
-
+    xA=(val-mu_A)/sqrt(var_A);
+    xB=(val-mu_B)/sqrt(var_B);
+    L1=L1*p_stdnorm(xA);
+    L2=L2*p_stdnorm(xB); 
     }
 
     if(fclose(fp) == EOF){
@@ -39,12 +41,10 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("L_A: %f\n",L1);
+    printf("L_B: %f\n",L2);
 
     return 0;
-
-
 }
 
 double p_stdnorm(double z)
