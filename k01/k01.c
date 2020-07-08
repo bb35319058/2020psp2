@@ -40,7 +40,7 @@ int main(void)
         estimation_var=0;
     }
     else{
-        estimation_var=N/(N-1)*var;
+        estimation_var=N*var/(N-1);
     }
 
     printf("ave=%1f\n", ave);

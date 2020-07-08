@@ -1,6 +1,6 @@
 # 課題1 レポート
 
-aa83988848 薗田光太郎
+bb35319058 吉村巧
 
 ## 課題
 
@@ -43,18 +43,26 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
-あいうえお
+34 varをn回目のvar_onlineに更新
+
+35 aveをn回目のave_onlineに更新
+
+36 x(1)~x(n)までの2乗の平均を求める
+
+46 標本平均を出力
+
+47 標本分散を出力
+
+48 推定平均を出力
+
+49 推定分散を出力
 
 ## 入出力結果
 
-```
-input the filename of sample:../sample/heights_male.csv
-the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
-```
+ave=173.888750
+var=25.361711
+estimation ave=173.888750
+estimation var=28.984813
 
 ## 修正履歴
 
