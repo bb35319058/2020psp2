@@ -30,7 +30,7 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-        N++;
+         N++;
          var = var_online(val, ave, var, square_ave, N);
          ave = ave_online(val, ave, N);
          square_ave = ave_online(pow(val, 2), square_ave, N);
