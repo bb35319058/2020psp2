@@ -20,8 +20,14 @@ int main(int argc, char* argv[])
     int i;
     double dummy;
 
+    if(argc != 4){
+        printf("error\n");
+        return 0;
+    }
 
-
+    sscanf(argv[1],"%1f",&mu);
+    sscanf(argv[2],"%1f",&sigma);
+    sscanf(argv[3],"%d",&num_dummy);
 
 
     printf("============================================\n");
@@ -31,9 +37,9 @@ int main(int argc, char* argv[])
     printf("============================================\n");
 
     srand(RAND_SEED);
-    for(  ){
+    for(i=0;i<num_dummy;i++){
         /* r_stdnormを使って，1人のデータを捏造 */
-        dummy =   ;
+        dummy = r_stdnorm()*sigma+mu;
         printf("%5.2lf\n",dummy);
     }
 
