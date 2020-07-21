@@ -41,8 +41,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %1f\n",L1);
-    printf("L_B: %1f\n",L2);
+    printf("L_A: %lf\n",L1);
+    printf("L_B: %lf\n",L2);
 
     return 0;
 }
