@@ -34,8 +34,8 @@ bb35319058 吉村巧
 45 Bの尤度を出力
 ## 入出力結果
 
-Likelihood for A：0.000000
-Likelihood for B：0.000000
+Likelihood for A：0.000006
+Likelihood for B：0.000002
 
 ## 修正履歴
 [comment #20200721]

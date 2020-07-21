@@ -30,8 +30,8 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-    xA=(val-mu_A)/sqrt(var_A);
-    xB=(val-mu_B)/sqrt(var_B);
+    xA=(val-mu_A)/var_A;
+    xB=(val-mu_B)/var_B;
     L1=L1*p_stdnorm(xA);
     L2=L2*p_stdnorm(xB); 
     }
@@ -41,8 +41,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",L1);
-    printf("L_B: %f\n",L2);
+    printf("L_A: %1f\n",L1);
+    printf("L_B: %1f\n",L2);
 
     return 0;
 }
