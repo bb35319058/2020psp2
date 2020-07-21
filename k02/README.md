@@ -38,4 +38,5 @@ Likelihood for A：0.000000
 Likelihood for B：0.000000
 
 ## 修正履歴
-
+[comment #20200721]
+- 答えが正しく出力されていません。doubleの演算子は%fではなく、%lfです。
