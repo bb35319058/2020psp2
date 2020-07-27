@@ -9,7 +9,7 @@ struct data{
     int gender;
 };
 
-int N = 1;
+int n = 1;
 int list = 0;
 
 int main(void){
@@ -40,11 +40,11 @@ if(fp_1==NULL){
 
 while(fgets(buf_1, sizeof(buf_1), fp_1) != NULL){
     sscanf(buf_1, "%d", &val_1);
-    heights_data[N].ID = val_1;
-    N = N + 1;
+    heights_data[n].ID = val_1;
+    n = n + 1;
 }
 
-N = 1;
+n = 0;
 
 printf("input the filename of sample_heights:");
 fgets(fname_2, sizeof(fname_2), stdin);
@@ -59,15 +59,15 @@ if(fp_2==NULL){
 
 while(fgets(buf_2, sizeof(buf_2), fp_2) != NULL){
     sscanf(buf_2, "%d, %lf", &val_2, &val_3);
-    heights_data[N].height = val_2;
-    heights_data[N].gender = val_3;
-    N = N + 1;
+    heights_data[n].gender = val_2;
+    heights_data[n].height = val_3;
+    n = n + 1;
 }
 
 printf("Which ID's data do you want?:");
 scanf("%d", &search_data);
 
-for(i=1; i<=N; i++){
+for(i=1; i<=n; i++){
     if(search_data == heights_data[i].ID){
         printf("ID:%d\n", heights_data[i].ID);
     }
