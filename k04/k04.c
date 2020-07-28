@@ -70,7 +70,7 @@ scanf("%d", &search_data);
 for(i=1; i<=n; i++){
     if(search_data == heights_data[i].ID){
         printf("ID:%d\n", heights_data[i].ID);
-    }
+    
 
     printf("height:%.2f\n", heights_data[i].height);
 
@@ -83,6 +83,7 @@ for(i=1; i<=n; i++){
     }
 
     list =1;
+    }
 }
 
 if(list == 0){

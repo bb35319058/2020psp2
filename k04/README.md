@@ -37,36 +37,7 @@ Input the filename of sample height : ../sample/heights.csv
 Input the filename of sample ID : ../sample/IDs.csv
 Which ID's data do you want? : 45313124
 ---
-height:183.87
-gender:male
-height:179.54
-gender:male
-height:166.90
-gender:female
-height:173.62
-gender:male
-height:165.62
-gender:female
-height:167.83
-gender:male
-height:152.40
-gender:female
-height:163.24
-gender:female
-height:161.39
-gender:female
-height:174.38
-gender:male
-height:171.38
-gender:male
-height:152.28
-gender:female
-height:169.39
-gender:male
-height:171.10
-gender:male
-height:0.00
-```
+no data
 
 ## 修正履歴
 [comment #20200721]
