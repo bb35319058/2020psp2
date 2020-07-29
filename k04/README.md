@@ -38,6 +38,7 @@ Input the filename of sample ID : ../sample/IDs.csv
 Which ID's data do you want? : 45313124
 ---
 no data
+```
 
 ## 修正履歴
 [comment #20200721]
@@ -56,3 +57,6 @@ no data
 
 [comment #20200728-2]
 - 修正の指示、アドバイス等は特にありません。引き続き先生に提出をお願いします。
+
+[comment #20200728 sonoda]
+- 課題4の完了を確認しました．
